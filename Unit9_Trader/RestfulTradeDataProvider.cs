@@ -5,7 +5,7 @@ using Unit9_Trader.Contracts;
 
 namespace Unit9_Trader
 {
-    class RestfulTradeDataProvider : ITradeDataProvider
+    public class RestfulTradeDataProvider : ITradeDataProvider
     {
         public RestfulTradeDataProvider(string url, ILogger logger)
         {
