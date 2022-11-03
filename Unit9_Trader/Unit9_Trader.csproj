@@ -10,6 +10,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Net.Http.Formatting.Extension" Version="5.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Unit9_Trader.AdoNet\Unit9_Trader.AdoNet.csproj" />
     <ProjectReference Include="..\Unit9_Trader.Contracts\Unit9_Trader.Contracts.csproj" />
   </ItemGroup>

@@ -7,14 +7,16 @@ namespace Unit9_Trader
 {
     public class StreamTradeDataProvider : ITradeDataProvider
     {
-        public StreamTradeDataProvider(Stream stream)
+        public StreamTradeDataProvider(Stream stream, ILogger logger)
         {
             this.stream = stream;
+            this.logger = logger;
         }
 
         public IEnumerable<string> GetTradeData()
         {
             var tradeData = new List<string>();
+            logger.LogInfo("Reading trades from file stream.");
             using (var reader = new StreamReader(stream))
             {
                 string line;
@@ -27,5 +29,6 @@ namespace Unit9_Trader
         }
 
         private readonly Stream stream;
+        private readonly ILogger logger;
     }
 }

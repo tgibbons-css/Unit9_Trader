@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="trades_1good.txt" />
+    <None Remove="trades_5good.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="trades_5good.txt" />
+    <EmbeddedResource Include="trades_1good.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
